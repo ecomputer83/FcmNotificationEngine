@@ -71,7 +71,7 @@ namespace FcmNotificationEngine.Queues
             DbCommand command = db.GetSqlStringCommand(SQL);
 
             // specify stored procedure parameters
-            db.AddInParameter(command, "@PushNotificationID", DbType.Guid, new Guid(pushNotificationID));
+            db.AddInParameter(command, "@PushNotificationID", DbType.String, pushNotificationID);
 
             //execute command
             retVal = ExecuteNonQuery(db, null, command);

@@ -28,7 +28,7 @@ namespace KCI.PushNotificationEngine
 
             //# Service Information
 
-            serviceInstaller.DisplayName = "Dalex Notification Engine";
+            serviceInstaller.DisplayName = "Push Notification Engine";
             serviceInstaller.StartType = ServiceStartMode.Automatic;
 
             //# This must be identical to the WindowsService.ServiceBase name
